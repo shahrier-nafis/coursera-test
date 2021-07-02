@@ -1,0 +1,49 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.bg {
+  background-image: url("60df2ee99cfc9.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg {
+  animation-name: shake;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.5) rotate(10deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.75) rotate(-15deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.gif {
+  position: absolute;
+  overflow: hidden;
+  top: 20px;
+  left: 100px;
+  width: 270px; /* width of container */
+  height: 435px; /* height of container */
+  border-radius: 50px;
+  transform: scale(0.8);
+}
+.gif img {
+  position: absolute;
+  margin: 10px 00 00 -85px;
+}
